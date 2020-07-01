@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    android:background="@drawable/ic_dial">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnPause"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="               PAUSE               "></Button>
+        <Button
+            android:id="@+id/btnStop"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="510dp"
+            android:text="     STOP     "></Button>
+
+
+
+        <com.github.capur16.digitspeedviewlib.DigitSpeedView
+            android:id="@+id/digit_speed_view"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="230dp"
+            app:speedTextSize="30dp"
+            app:unit=" \n\n\n  Km/h"
+            app:unitTextSize="8dp" />
+        <com.github.capur16.digitspeedviewlib.DigitSpeedView
+            android:id="@+id/digit_speed_viewfuel"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="460dp"
+            app:speed="0"
+            app:speedTextSize="20dp"
+            app:unit=" \n\n\n    KMS"
+            app:unitTextSize="6dp" />
+        <com.github.capur16.digitspeedviewlib.DigitSpeedView
+            android:id="@+id/digit_speed_viewrpm"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="-155dp"
+            android:layout_marginLeft="30dp"
+            app:speed="0"
+            app:speedTextSize="20dp"
+            app:unit=" \n\n\n    RPM"
+            app:unitTextSize="6dp" />
+        <Button
+            android:id="@+id/statusbtn"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="  VERIFY DOCUMENTS  "></Button>
+        <Button
+            android:id="@+id/renewalbtn"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="510dp"
+            android:text="  VEHICLE STATUS  "></Button>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="270dp"
+            android:text="            START            "></Button>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="#ea1818"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="#ea1818"/>
+
+
+    </LinearLayout>
+</ScrollView>

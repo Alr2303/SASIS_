@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.github.capur16.digitspeedview.Main3Activity">
+
+    <TextView
+        android:id="@+id/vehicle_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="20dp"
+        android:text="@string/stat3"
+        android:textSize="@dimen/stat3"
+        />
+    <TextView
+        android:id="@+id/vehicle_stat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="20dp"
+        android:text="@string/stat2"
+        android:textSize="@dimen/stat2"
+        />
+
+    <TextView
+        android:id="@+id/vehicle_stat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="260dp"
+        android:text="@string/stat1"
+        android:textSize="@dimen/stat1"/>
+
+
+</RelativeLayout>
